@@ -1,10 +1,12 @@
 {
   "name": "learn-facebook-flow",
   "version": "1.0.0",
-  "description": "Flow adds static typing to JavaScript to improve developer productivity and code quality.  http://flowtype.org/",
+  "description": "Flow adds static typing to JavaScript to improve developer productivity and code quality, check it http://flowtype.org/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./",
+    "flow": "flow \"check\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/besarthoxhaj/learn-facebook-flow/issues"
   },
-  "homepage": "https://github.com/besarthoxhaj/learn-facebook-flow#readme"
+  "homepage": "https://github.com/besarthoxhaj/learn-facebook-flow#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.10.2",
+    "eslint-plugin-flowtype": "^2.2.7",
+    "flow-bin": "^0.26.0"
+  }
 }
