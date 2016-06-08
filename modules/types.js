@@ -7,10 +7,21 @@ export type user = {
   name: string
 };
 
+type RouteT = {
+  name: string
+};
+
+type RouteHistory = Array<RouteT>;
+
+type RouterState = {
+  route: RouteT,
+  history: RouteHistory
+};
+
 type BikeT = {
   userId: userId,
   type: string,
-  color: string,
+  color: string
 };
 
 export let izaakBike: BikeT = {
@@ -30,7 +41,7 @@ export let izaakBike: BikeT = {
 export function getUser(id: userId): user {
   return {
     name: 'Izaak Rogan',
-    bike: izaakBike,
+    bike: izaakBike
   };
 }
 
@@ -42,3 +53,18 @@ export function getUser(id: userId): user {
 
   NOTE
  */
+
+/**
+ * goBack to previous route
+ * @param  {[type]} state:RouterState [description]
+ * @return {[type]}                   [description]
+ */
+export function goBack (state:RouterState):RouterState {
+
+  const lastRoute = state.history[state.history.length];
+
+  return {
+    route:lastRoute,
+    history:state.history
+  };
+};

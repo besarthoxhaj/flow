@@ -57,3 +57,4 @@ declare var unsafe:any;
 (unsafe:string);
 (unsafe:{foo:string});
 // mixed
+(/a/:RegExp)
