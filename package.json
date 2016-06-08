@@ -4,7 +4,7 @@
   "description": "Flow adds static typing to JavaScript to improve developer productivity and code quality, check it http://flowtype.org/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "flow && npm run lint",
     "lint": "eslint ./",
     "flow": "flow \"check\""
   },
