@@ -1,10 +1,10 @@
 {
-  "name": "learn-facebook-flow",
+  "name": "flow",
   "version": "1.0.0",
   "description": "Flow adds static typing to JavaScript to improve developer productivity and code quality.  http://flowtype.org/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "flow"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/besarthoxhaj/learn-facebook-flow/issues"
   },
-  "homepage": "https://github.com/besarthoxhaj/learn-facebook-flow#readme"
+  "homepage": "https://github.com/besarthoxhaj/learn-facebook-flow#readme",
+  "dependencies": {
+    "flow-bin": "^0.33.0"
+  }
 }
