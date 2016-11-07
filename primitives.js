@@ -10,13 +10,15 @@
 (parseFloat('not a number'):number); // hint: NaN
 // string
 ('foo':string);
-('bar':string);
+(4:number);
+('bar':void);
 // null
 (null:null);
 (null:void);
 // void
 (undefined:void);
 (undefined:null);
+(["hehe"]:Array<string>);
 // optional properites and parameters T|void
 function optional_fun(foo?: string) {
   (foo: string|void);
